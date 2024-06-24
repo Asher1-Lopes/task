@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+    <style>
+      body {
+        height: 100vh;
+        margin: 0px;
+        padding: 0px;
+        font-family: "Roboto", sans-serif;
+        background-color: #eeee;
+      }
+      .nav {
+        height: 8%;
+        display: flex;
+        /* flex-direction: row; */
+        align-items: center;
+        background-color: #1f2a36;
+        margin-bottom: 20px;
+       
+      }
+
+     a  {
+        /* height: 100%; */
+        /* padding: 10px; */
+      }
+      #span {
+        color: white;
+        text-align: center;
+        font: 50px;
+      }
+
+      .container {
+       
+        height: 84%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid; */
+        background-color: #eeee;
+      }
+      .login {
+        /* border:4px solid rgb(199, 4, 4); */
+        border-top: 2px solid #00eeff;
+        max-width: 500px;
+        width:100%;
+        height: auto;
+        margin-top: 40px;
+        /* margin-bottom: 0px; */
+        background-color: white;
+        border-radius: 3px;
+      }
+      .center {
+        text-align: center;
+        padding-bottom: 4px;
+        background-color: #eeeeee;
+      }
+      .center > a {
+        text-decoration: none;
+        color: rgb(41, 141, 46);
+      }
+      #r {
+        border-right: 1px solid grey;
+        padding-right: 7px;
+      }
+      .footer {
+        /* height:8%; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        /* border:2px solid black; */
+        background-color: #e0e1e1;
+      }
+
+      .div2 {
+        width: auto;
+      }
+      .div3 {
+        width: auto;
+      }
+
+      #img {
+        height: 100%;
+      }
+      .div3 {
+        color: #616161;
+      }
+      .logheader {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+      }
+      .h2 {
+        text-align: center;
+        flex-grow: 1;
+      }
+      input {
+        accent-color: green;
+      }
+      .content2 {
+        margin: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: large;
+      }
+
+      .content3 {
+        margin: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: large;
+      }
+      .content4 {
+        margin: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: right;
+        font-size: large;
+      }
+      .content5 {
+        margin: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: right;
+        font-size: large;
+        margin-bottom: 20px;
+      }
+
+      /* .content5 > input{
+    width:100%;
+    font-size: large;
+} */
+
+      .content5-1 {
+        display: flex;
+        border-bottom: 1px solid;
+      }
+      i {
+        color: green;
+      }
+      .content5-1 > input {
+        flex-grow: 1;
+        border: 0px;
+        font-size: large;
+      }
+      .content4 > input {
+        width: 100%;
+        font-size: large;
+      }
+      .content6 {
+        margin: 10px;
+        padding-left: 25px;
+        margin-bottom: 20px;
+        font-size: large;
+      }
+      .content7 {
+        /* margin:10px;
+    padding-left: 25px; */
+      }
+      label {
+        /* padding: 10px; */
+        margin-bottom: 5px;
+      }
+
+      .content3 > select {
+        /* display: flex;
+  justify-content: center; */
+        /* text-decoration: underline; */
+        border: 0px;
+        border-bottom: 1px solid black;
+        /* width:100%; */
+      }
+
+      .content3 > label {
+        color: #616161;
+        font-size: large;
+      }
+      .content4 > select {
+        /* display: flex;
+  justify-content: center; */
+        /* text-decoration: underline; */
+        border: 0px;
+        border-bottom: 1px solid black;
+        /* width:100%; */
+      }
+      #country {
+        /* text-decoration: underline;
+    border:0px; */
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: large;
+      }
+      #state {
+        margin-bottom: 20px;
+        width: 100%;
+        font-size: large;
+      }
+      #email {
+        /* margin-bottom:10px; */
+        border: 0px;
+        border-bottom: 1px solid;
+      }
+
+      /* #pass{ margin-bottom:10px;
+    border:0px;
+    border-bottom: 1px solid;
+} */
+
+      .content7 {
+        display: flex;
+        justify-content: center;
+      }
+      .content7 > input {
+        width: 120px;
+        margin: 10px;
+        margin-bottom: 30px;
+        padding: 5px;
+        color: #1f2834;
+        box-shadow: 2px 2px 3px #1f2834;
+        background-color: #3fd28b;
+        border: 0px;
+        font-size: large;
+      }
+
+      .fa-arrow-left {
+        color: green;
+      }
+
+      .content4 > a {
+        color: green;
+        text-decoration: none;
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+      .content5 > a {
+        color: green;
+        text-decoration: none;
+        font-size: 12px;
+      }
+      .flex1{
+        display:flex;
+        flex-direction: column;   
+        height:100vh;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="flex1">
+    <div class="nav">
+      <!-- <img src="h1.PNG" alt="" /> -->
+      <a href="main.html">  <img src="h1.PNG" alt="" /></a>
+      <span id="span">QUANTUM</span>
+    </div>
+
+    <div class="container">
+      <div class="login">
+        <div class="logheader">
+          <i class="fa-solid fa-arrow-left"></i>
+          <h2 class="h2">Log in with Quantum</h2>
+        </div>
+        <div class="contentl">
+          <div class="content2">
+            <input type="radio" name="" id="" /> District
+            <input type="radio" /> Independent school
+          </div>
+          <div class="content3">
+            <label for=""> state</label><br />
+
+            <select name="" id="state">
+              <option value="">Alabama</option>
+              <option value="">3</option>
+              <option value="">4</option>
+            </select>
+          </div>
+          <div class="content3">
+            <label for=""> country</label><br />
+
+            <select name="" id="country">
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+            </select>
+          </div>
+
+          <div class="content4">
+            <!-- <span> username / email </span><br> -->
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="username /  email "
+            />
+            <a href="">FORGOT USERNAME?</a>
+          </div>
+          <div class="content5">
+            <!-- input 100% -->
+            <div class="content5-1">
+              <input type="password" name="" id="pass" placeholder="password" />
+              <i class="fa-regular fa-eye"></i>
+            </div>
+            <!-- <input type="password" name="" id="pass" placeholder="password"> <br> -->
+            <a href="">FORGOT PASSWORD?</a>
+          </div>
+
+          <div class="content6">
+            <input type="checkbox" name="" id="" /> Remember me
+          </div>
+          <div class="content7"><input type="submit" value="Log in" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="center" style="margin-top:10px">
+      <a href="" id="r">About</a>
+      <a href="">Contact-us</a>
+    </div>
+
+    <footer class="footer">
+      <div></div>
+      <div><img src="f1.PNG" alt="" id="img" /></div>
+      <div class="div3">
+        Copyright &copy; 2000 -2021 <b>Zeus system Pvt.Ltd. </b> All rights
+        reseverd
+      </div>
+      <div></div>
+    </footer>
+  </div>
+  </body>
+</html>
