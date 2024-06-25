@@ -1,100 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>main</title>
-</head>
-<style>
-    *{
-        margin:0px;
-        padding:0px;
-        font-family: "Roboto", sans-serif;
-        /* change */
-      
-        
-        
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      font-family: "Roboto", sans-serif;
+      /* change */
     }
-    body{
-      height:100vh;
+    body {
+      height: 100vh;
       display: flex;
       flex-direction: column;
     }
-    .foot{
+    .foot {
       flex-grow: 1;
     }
-          .nav {
-        height: 8%;
-        display: flex;
-        /* flex-direction: row; */
-        /* align-items: center; */
-        /* align-content: center; */
-        background-color: #1f2a36;
-       
-      }
-      .nav .img1{
-        width: 100%;
-        height: 100%;
-      }
+    .nav {
+      height: 8%;
+      display: flex;
+      /* flex-direction: row; */
+      /* align-items: center; */
+      /* align-content: center; */
+      background-color: #1f2a36;
+    }
+    .nav .img1 {
+      width: 100%;
+      height: 100%;
+    }
 
+    a {
+      /* height: 100%; */
 
-   
+      /* padding-left: 20px; */
+      margin-left: 20px;
+      margin-right: 5px;
+      color: white;
+      text-decoration: none;
+    }
 
+    #span {
+      color: white;
+      text-align: center;
+      align-content: center;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .mid {
+      flex-grow: 1;
+    }
+    .third {
+      display: flex;
+    }
+    .media {
+      display: flex;
+    }
+    #none {
+      display: none;
+    }
 
-     a {
-        /* height: 100%; */
-     
-        /* padding-left: 20px; */
-        margin-left: 20px;
-        margin-right: 5px;
-        color:white;
-        text-decoration: none;
-      }
-    
-
-      #span {
-        color: white;
-        text-align: center;
-        align-content: center;
-        font-size: 25px;
-        font-weight: bold;
-      }
-      .mid{
-        flex-grow: 1;
-      }
-      .third{
-        display: flex;
-      }
-      .media{
-        display:flex;
-      }
-      #none{
-  display:none;
-}
-
-      .bar{
+    .bar {
+      display: none;
+    }
+    @media screen and (max-width: 1200px) {
+      .media {
         display: none;
       }
-      @media screen and (max-width:1200px) {
-        .media{
-          display: none;
-       
-        }
-        .bar{
-          display:block
-        }
+      .bar {
+        display: block;
+      }
 
-        /* #none {
+      /* #none {
   display:flex;
   flex-direction:column;
   border:1px solid black;
@@ -103,508 +93,633 @@
   color:black;
 } */
 
-
-#none.mystyle{
-            display: flex;
-            flex-direction: column;
-           
-
-        }
-        #none.mystyle{
-          background-color: #1f2a36;
-        }    
-        #none>a{
-          text-align: center;
-          padding:10px;
-        
-        }    
-        #none>a:hover{
-          background-color: #313d49;
-        
-        } 
-        
-      
+      #none.mystyle {
+        display: flex;
+        flex-direction: column;
       }
-
-  
-      .third>a{
-        align-content: center;
+      #none.mystyle {
+        background-color: #1f2a36;
+      }
+      #none > a {
         text-align: center;
-        color:#8DDC97;
-        font-weight: small;
-        font-size: large;
+        padding: 10px;
       }
-      .media>a:hover{
-        color:white;
-        border-bottom:5px solid white;
+      #none > a:hover {
+        background-color: #313d49;
       }
-      .third>i{
-        align-content: center;
-        text-align: center;
-        color:#8DDC97;
-        font-weight: small;
-        font-size: large;
-        margin-right:10px;
-      }
-  
-      .media>a{
-        align-content: center;
-        text-align: center;
-        color:#8DDC97;
-        font-weight: small;
-        font-size: large;
-      }
+    }
 
-      .dash{
-        border-bottom:5px solid white;
-        color:white;
-       font-size: large;
-       font-weight: small;
-      }
-     
-      .alast{
-        margin-right:15px;
+    .third > a {
+      align-content: center;
+      text-align: center;
+      color: #8ddc97;
+      font-weight: small;
+      font-size: large;
+    }
+    .media > a:hover {
+      color: white;
+      border-bottom: 5px solid white;
+    }
+    .third > i {
+      align-content: center;
+      text-align: center;
+      color: #8ddc97;
+      font-weight: small;
+      font-size: large;
+      margin-right: 10px;
+    }
 
-       
-      }
+    .media > a {
+      align-content: center;
+      text-align: center;
+      color: #8ddc97;
+      font-weight: small;
+      font-size: large;
+    }
 
+    .dash {
+      border-bottom: 5px solid white;
+      color: white;
+      font-size: large;
+      font-weight: small;
+    }
 
+    .alast {
+      margin-right: 15px;
+    }
 
-      .div102{
-        display:flex;
-        flex-direction: row;
-        margin:10px;
-        align-content: center;
-        padding:10px;
+    .div102 {
+      display: flex;
+      flex-direction: row;
+      margin: 10px;
+      align-content: center;
+      padding: 10px;
+    }
+    .div102 > div:nth-child(1) {
+      border-bottom: 3px solid black;
+    }
+    .div102 > div {
+      /* border:1px solid black; */
+      width: 50%;
+      padding: 20px;
+      text-align: center;
+      background-color: #8ddc97;
+    }
+    .div102 b {
+      font-size: large;
+    }
+    .div102 i {
+      margin-right: 5px;
+    }
 
-      }
-      .div102>div:nth-child(1){
-        border-bottom: 3px solid black;
-      }
-      .div102>div{
-        /* border:1px solid black; */
-        width:50%;
+    .div149 {
+      display: flex;
+      flex-direction: row;
+      /* width:100%; */
+      border-bottom: 1px solid grey;
+      /* margin-left:10px; */
+      margin: 10px;
+      justify-content: space-between;
+    }
+    .div149 > div {
+      /* border: 1px solid ; */
+      margin: 15px;
+    }
+    .divselec {
+      border: 0px;
+      border-bottom: 1px solid black;
+      width: 200px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      /* grid-template-columns: repeat(auto-fill,minmax(1fr, 1fr)); */
+
+      gap: 30px;
+      margin: 10px;
+    }
+
+    @media screen and (max-width: 1200px) {
+      .grid {
+        display: grid;
+        grid-template-columns: auto;
+        /* grid-template-columns: repeat(auto-fill,minmax(1fr, 1fr)); */
+
+        gap: 30px;
+        margin: 10px;
         padding: 20px;
-        text-align: center;
-        background-color: #8DDC97;
       }
-      .div102 b{
-    font-size: large;
-      }
-      .div102 i{
-           margin-right: 5px;
-      }
+    }
 
-      .div149{
-        display:flex;
-        flex-direction: row;
-        /* width:100%; */
-        border-bottom:1px solid grey;
-        /* margin-left:10px; */
-        margin:10px;
-        justify-content: space-between;
+    /* inside content  */
+    .parent {
+      padding: 10px;
+      background-color: white;
+    }
 
-      }
-      .div149 > div{
-        /* border: 1px solid ; */
-        margin:15px;
-        
-      }
-      .divselec{
-border:0px;
-  border-bottom:1px solid black;
-  width:200px;
+    .flexbox {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      border-bottom: 1px solid black;
+    }
+    .flexbox > div:nth-child(1) {
+      width: auto;
+      height: auto;
+    }
+    .divselec1 {
+      border: 0px;
+      border-bottom: 1px solid black;
+      width: 300px;
+      font-weight: bold;
+    }
 
+    .divmain {
+      display: flex;
+      justify-content: space-between;
+    }
 
-  
-      }
-     
-     .grid{
-         display:grid;
-         grid-template-columns: auto auto;
-        /* grid-template-columns: repeat(auto-fill,minmax(1fr, 1fr)); */
-  
-         gap:30px;
-         margin:10px;
-     }
+    .boxfooter {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      text-align: center;
+      padding: 10px;
+    }
+    .boxfooter > div {
+      /* border:1px solid black; */
+    }
 
-     @media screen and (max-width:1200px) {
-      .grid{
-          display:grid;
-         grid-template-columns: auto;
-        /* grid-template-columns: repeat(auto-fill,minmax(1fr, 1fr)); */
-        
-         gap:30px;
-         margin:10px;
-         padding:20px;
-        }
-     }
-  
+    .center {
+      text-align: center;
+      padding-bottom: 4px;
+      background-color: #eeeeee;
+    }
+    .center > a {
+      text-decoration: none;
+      color: rgb(41, 141, 46);
+    }
+    #r {
+      border-right: 1px solid grey;
+      padding-right: 7px;
+    }
 
+    .footer {
+      /* height:8%; */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      /* border:2px solid black; */
+      background-color: #e0e1e1;
+    }
 
-     /* inside content  */
-.parent{
-  padding:10px;
-  background-color: white;
+    .div2 {
+      width: auto;
+    }
+    .div3 {
+      width: auto;
+    }
 
-}
-
-.flexbox{
-  display :flex;
-  flex-direction: row;
-  gap:20px;
-  border-bottom:1px solid black;
-
-}
-.flexbox>div:nth-child(1){
-  width:auto;
-  height: auto;
-}
-.divselec1{
-border:0px;
-  border-bottom:1px solid black;
-  width:300px;
-font-weight: bold;
-
-  
-      }
-
-      .divmain{
-        display: flex;
-        justify-content: space-between;
-      
-      }
-
-      .boxfooter{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        text-align: center;
-        padding:10px;
-      }
-      .boxfooter>div{
-/* border:1px solid black; */
-      }
-
-      .center {
-        text-align: center;
-        padding-bottom: 4px;
-        background-color: #eeeeee;
-      }
-      .center > a {
-        text-decoration: none;
-        color: rgb(41, 141, 46);
-      }
-      #r {
-        border-right: 1px solid grey;
-        padding-right: 7px;
-      }
-
-      .footer {
-        /* height:8%; */
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        /* border:2px solid black; */
-        background-color: #e0e1e1;
-      }
-
-      .div2 {
-        width: auto;
-      }
-      .div3 {
-        width: auto;
-      }
-
-      #img {
-        height: 100%;
-      }
-      .div3 {
-        color: #616161;
-      }
-      .flexbox img{
-        /* width:130px;
+    #img {
+      height: 100%;
+    }
+    .div3 {
+      color: #616161;
+    }
+    .flexbox img {
+      /* width:130px;
         height: 150px; */
-        width: 100%;
-        height:100%
-      }
-
-</style>
-<body style="background-color: whitesmoke;">
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <body style="background-color: whitesmoke">
     <div class="nav">
-        <!-- <img src="h1.PNG" alt="" /> -->
-        
-        <a href="main.html" class="a1">  <img class="img1" src="h1.PNG" alt="" /></a>
-        <span id="span">QUANTUM</span>
- 
-        <div class="mid"></div>
+      <!-- <img src="h1.PNG" alt="" /> -->
 
-        <div class="third">  
-          <div class="media">
-      
-            <a class="dash" style="color:white">Dashboard</a>
-            <a href="">content</a>
-            <a href="">users</a>
-            <a href="">report</a>
-            <a href="">admin</a>
-       
-          </div> 
-            <a href=""><i class="fa-regular fa-bell" style="position:relative; padding:5px"><span style="position:absolute; top:0; right:0;font-size: x-small; color:white; border-radius:50%; background-color:blue; padding:2px;">1</span></i></a>
-            <!-- <a href=""><i class="fa-solid fa-bullhorn"></i></a> -->
-            <a href=""><i class="fa-solid fa-bullhorn" style="position:relative; padding:5px"><span style="position:absolute; top:0; right:0; font-size: x-small; color:white; border-radius:50%; background-color:blue; padding:2px; ">2</span></i></a>
-            <a href="" class="alast" ><img src="h2.PNG" alt="" style="border-radius: 50%; position:relative; padding:1px"><span style="position:absolute; ; font-size: x-small; color:black; border-radius:50%; background-color:whitesmoke; padding:2px; margin-top:5px">T</span></a>
-           
-            <i class="fa-solid fa-bars bar" style="color:green; margin-right:10px; margin-left:20px " id="nav" onclick="myfunc()"></i>
-          </div>
+      <a href="main.html" class="a1">
+        <img class="img1" src="h1.PNG" alt=""
+      /></a>
+      <span id="span">QUANTUM</span>
+
+      <div class="mid"></div>
+
+      <div class="third">
+        <div class="media">
+          <a class="dash" style="color: white">Dashboard</a>
+          <a href="">content</a>
+          <a href="">users</a>
+          <a href="">report</a>
+          <a href="">admin</a>
+        </div>
+        <a href=""
+          ><i
+            class="fa-regular fa-bell"
+            style="position: relative; padding: 5px"
+            ><span
+              style="
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: x-small;
+                color: white;
+                border-radius: 50%;
+                background-color: blue;
+                padding: 2px;
+              "
+              >1</span
+            ></i
+          ></a
+        >
+        <!-- <a href=""><i class="fa-solid fa-bullhorn"></i></a> -->
+        <a href=""
+          ><i
+            class="fa-solid fa-bullhorn"
+            style="position: relative; padding: 5px"
+            ><span
+              style="
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: x-small;
+                color: white;
+                border-radius: 50%;
+                background-color: blue;
+                padding: 2px;
+              "
+              >2</span
+            ></i
+          ></a
+        >
+        <a href="" class="alast" style="position: relative;"
+          ><img
+            src="h2.PNG"
+            alt=""
+            style="border-radius: 50%;  padding: 1px"
+          /><span
+            style="
+              position: absolute;
+              font-size: x-small;
+              color: black;
+              border-radius: 50%;
+              background-color: whitesmoke;
+              padding: 1px;
+              margin-top: 2px;
+             right:2px
+            "
+            >T</span
+          ></a
+        >
+
+        <i
+          class="fa-solid fa-bars bar"
+          style="color: green; margin-right: 10px; margin-left: 20px"
+          id="nav"
+          onclick="myfunc()"
+        ></i>
       </div>
-<!-- <div style="background-color: whitesmoke;"> -->
+    </div>
+    <!-- <div style="background-color: whitesmoke;"> -->
 
-
-  <div id="none">
-    <a href="" >Dashboard</a>
-    <a href="">content</a>
-    <a href="">users</a>
-    <a href="">report</a>
-    <a href="">admin</a>
-  </div>
-<div class="foot">
+    <div id="none">
+      <a href="">Dashboard</a>
+      <a href="">content</a>
+      <a href="">users</a>
+      <a href="">report</a>
+      <a href="">admin</a>
+    </div>
+    <div class="foot">
       <div class="div102">
-
         <div>
-            <i class="fa-solid fa-lg fa-book"></i>
-            <b style="font-size: larger;">4 </b> 
-            <span style="font-size: larger; font-family: roboto;" >Courses</span>
+          <i class="fa-solid fa-lg fa-book"></i>
+          <b style="font-size: larger">4 </b>
+          <span style="font-size: larger; font-family: roboto">Courses</span>
         </div>
         <div>
-            <i class="fa-solid  fa-lg  fa-user"></i>
-           <b style="font-size: larger;">4</b>
-           <span style="font-size: larger; font-family: roboto;" >Classes</span>
+          <i class="fa-solid fa-lg fa-user"></i>
+          <b style="font-size: larger">4</b>
+          <span style="font-size: larger; font-family: roboto">Classes</span>
         </div>
       </div>
-
-
-
 
       <div class="div149">
         <div>showing 4 by 4 courses</div>
 
         <div class="div165">
-            sort by:
-        <select name="" id="" class="divselec" style="background-color: whitesmoke;">
-            <option value="" >course name</option>
-        </select>
-        <i class="fa-solid fa-arrow-up"></i>
+          sort by:
+          <select
+            name=""
+            id=""
+            class="divselec"
+            style="background-color: whitesmoke"
+          >
+            <option value="">course name</option>
+          </select>
+          <i class="fa-solid fa-arrow-up"></i>
         </div>
       </div>
 
-
-
-
       <div class="grid">
         <!-- 1  -->
-        <div class="parent" style="padding:20px">
+        <div class="parent" style="padding: 20px">
+          <div class="flexbox" style="padding: 10px">
+            <div>
+              <img src="i1.PNG" alt="" />
+            </div>
+            <div style="width: 100%">
+              <div class="divmain" style="margin-bottom: 1px; margin-left: 5px">
+                <b style="font-size: large">Acceleration</b>
+                <i class="fa-solid fa-star fa-lg" style="color: yellow"></i>
+              </div>
+              <!-- <b>Acceleration</b>  <br> -->
 
+              <div style="margin-bottom: 1px; margin-left: 5px">
+                <span style="border-right: 1px solid grey; padding-right: 3px"
+                  >physics</span
+                >
+                <span>grade 7<span style="color: green"> +2</span> </span>
+              </div>
+              <br />
 
+              <div style="margin-bottom: 10px; margin-left: 5px">
+                <b>4</b> Units <b>18</b> lessons <b>24</b> Topics
+              </div>
 
-
-       <div class="flexbox"  style="padding:10px">
-        <div>
-          <img src="i1.PNG" alt="">
-        </div>
-        <div style="width:100%">
-          <div class="divmain" style="margin-bottom:1px; margin-left:5px">
-            <b style="font-size: large;">Acceleration</b> 
-            <i class="fa-solid fa-star fa-lg" style="color:yellow"></i>
+              <div style="margin-bottom: px; margin-left: 5px">
+                <select
+                  name=""
+                  id=""
+                  class="divselec1"
+                  style="width: 100%; font-size: larger"
+                >
+                  <option value="">Mr Frank Class B</option>
+                </select>
+              </div>
+              <br />
+              <div style="margin-bottom: 10px; margin-left: 5px">
+                <span style="border-right: 1px solid grey; padding-right: 3px"
+                  >50 students
+                </span>
+                <span style="padding-left: 3px">21-Jan-2020 21-Aug-2020</span>
+              </div>
+            </div>
           </div>
-           <!-- <b>Acceleration</b>  <br> -->
-         
-         <div style="margin-bottom:1px; margin-left:5px"> <span style="border-right: 1px solid grey; padding-right:3px">physics</span>
-          <span>grade 7<span style="color:green"> +2</span> </span></div> 
-<br>
 
-<div style="margin-bottom:10px; margin-left:5px"><b>4</b> Units <b>18</b> lessons <b>24</b> Topics</div>
-
-<div style="margin-bottom:px; margin-left:5px">
-<select name="" id="" class="divselec1" style="width:100%;  font-size: larger;">
-  <option   value="" >Mr Frank Class B </option>
-</select>
-</div>
-<br>
-<div style="margin-bottom:10px; margin-left:5px">
-<span style="border-right: 1px solid grey; padding-right:3px">50 students </span>
-<span style="padding-left:3px">21-Jan-2020 21-Aug-2020</span>
-</div>
-        </div>
-       </div>
-
-<div class="boxfooter">
- 
-  <div><i  class="fa-solid fa-eye fa-lg" style="color:darkgreen"></i></div>
-  <div><i class="fa-regular fa-calendar-days fa-lg" style="color:darkgreen"></i></div>
-  <div><i class="fa-regular fa-calendar-days fa-lg" style="color:darkgreen"></i></div>
-  <div><i class="fa-solid fa-chart-simple fa-lg" style="color:darkgreen"></i></div>
-
-
-
-</div>
-
-
+          <div class="boxfooter">
+            <div>
+              <i class="fa-solid fa-eye fa-lg" style="color: darkgreen"></i>
+            </div>
+            <div>
+              <i
+                class="fa-regular fa-calendar-days fa-lg"
+                style="color: darkgreen"
+              ></i>
+            </div>
+            <div>
+              <i
+                class="fa-regular fa-calendar-days fa-lg"
+                style="color: darkgreen"
+              ></i>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-chart-simple fa-lg"
+                style="color: darkgreen"
+              ></i>
+            </div>
+          </div>
         </div>
 
         <!-- 2 -->
 
-         <div class="parent" style="padding:20px">
+        <div class="parent" style="padding: 20px">
+          <div class="flexbox" style="padding: 10px">
+            <div>
+              <img src="i2.PNG" alt="" />
+            </div>
+            <div style="width: 100%">
+              <div class="divmain" style="margin-bottom: 1px; margin-left: 5px">
+                <b style="font-size: large"
+                  >Displacement, Velocity and <br />
+                  Speed</b
+                >
+                <i class="fa-solid fa-star fa-lg" style="color: yellow"></i>
+              </div>
+              <!-- <b>Acceleration</b>  <br> -->
 
+              <div style="margin-bottom: 1px; margin-left: 5px">
+                <span style="border-right: 1px solid grey; padding-right: 3px"
+                  >physics</span
+                >
+                <span>grade 6<span style="color: green"> +2</span> </span>
+              </div>
+              <br />
 
+              <div style="margin-bottom: 10px; margin-left: 5px">
+                <b>2</b> Units <b>15</b> lessons <b>20</b> Topics
+              </div>
 
-
-       <div class="flexbox" style="padding:10px">
-        <div>
-          <img src="i2.PNG" alt="">
-        </div>
-        <div style="width:100%">
-          <div class="divmain" style="margin-bottom:1px; margin-left:5px">
-            <b style="font-size: large;">Displacement, Velocity and <br>  Speed</b> 
-            <i class="fa-solid fa-star fa-lg" style="color:yellow"></i>
+              <div style="margin-bottom: px; margin-left: 5px">
+                <select
+                  name=""
+                  id=""
+                  class="divselec1"
+                  style="width: 100%; font-size: larger; color: grey"
+                >
+                  <option value="">No Classes</option>
+                </select>
+              </div>
+              <br />
+              <div style="margin-bottom: px; margin-left: 5px">
+                <span style="padding-right: 3px"></span>
+                <span style="padding-left: 3px"></span>
+              </div>
+            </div>
           </div>
-           <!-- <b>Acceleration</b>  <br> -->
-         
-         <div style="margin-bottom:1px; margin-left:5px"> <span style="border-right: 1px solid grey; padding-right:3px">physics</span>
-          <span>grade 6<span style="color:green"> +2</span> </span></div> 
-<br>
 
-<div style="margin-bottom:10px; margin-left:5px"><b>2</b> Units <b>15</b> lessons <b>20</b> Topics</div>
-
-<div style="margin-bottom:px; margin-left:5px">
-<select name="" id="" class="divselec1" style="width:100%; font-size: larger;  color:grey" >
-  <option   value="">No Classes </option>
-</select>
-</div>
-<br>
-<div style="margin-bottom:px; margin-left:5px">
-<span style=" padding-right:3px"></span>
-<span style="padding-left:3px"></span>
-</div>
-        </div>
-       </div>
-
-<div class="boxfooter">
- 
-  <div><i  class="fa-solid fa-eye fa-lg" style="color:darkgreen"></i></div>
-  <div><i class="fa-regular fa-calendar-days fa-lg" style="color:darkgreen"></i></div>
-  <div><i class="fa-regular fa-calendar-days fa-lg" style="color:darkgreen"></i></div>
-  <div><i class="fa-solid fa-chart-simple fa-lg" style="color:darkgreen"></i></div>
-
-
-
-</div>
-
-
+          <div class="boxfooter">
+            <div>
+              <i class="fa-solid fa-eye fa-lg" style="color: darkgreen"></i>
+            </div>
+            <div>
+              <i
+                class="fa-regular fa-calendar-days fa-lg"
+                style="color: darkgreen"
+              ></i>
+            </div>
+            <div>
+              <i
+                class="fa-regular fa-calendar-days fa-lg"
+                style="color: darkgreen"
+              ></i>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-chart-simple fa-lg"
+                style="color: darkgreen"
+              ></i>
+            </div>
+          </div>
         </div>
         <!-- 3  -->
-        <div class="parent" style="padding:20px">
-
-
-
-
-          <div class="flexbox" style="padding:10px">
-           <div>
-             <img src="i3.PNG" alt="">
-           </div>
-           <div style="width:100%">
-             <div class="divmain" style="margin-bottom:1px; margin-left:5px">
-               <b style="font-size: large;">Introduction to Biology: Micro <br>organisms and how they affec..</b> 
-               <i class="fa-solid fa-star fa-lg" style="color:yellow"></i>
-             </div>
-              <!-- <b>Acceleration</b>  <br> -->
-            
-            <div style="margin-bottom:1px; margin-left:5px"> <span style="border-right: 1px solid grey; padding-right:3px">Biology</span>
-             <span>grade 4 <span style="color:green"> +1</span> </span></div> 
-   <br>
-   
-   <div style="margin-bottom:10px; margin-left:5px"><b>4</b> Units <b>18</b> lessons <b>24</b> Topics</div>
-   
-   <div style="margin-bottom:px; margin-left:5px">
-   <select name="" id="" class="divselec1" style="width:100%;  font-size: larger;" >
-     <option   value="" >All Classes</option>
-   </select>
-   </div>
-   <br>
-   <div style="margin-bottom:10px; margin-left:5px">
-   <span style=" padding-right:3px">300 students </span>
-   <!-- <span style="padding-left:3px">21-Jan-2020 21-Aug-2020</span> -->
-   </div>
-           </div>
-          </div>
-   
-   <div class="boxfooter">
-    
-     <div><i  class="fa-solid fa-eye fa-lg" style="color:darkgreen"></i></div>
-     <div><i class="fa-regular fa-calendar-days fa-lg" style="color:darkgreen"></i></div>
-     <div><i class="fa-regular fa-calendar-days fa-lg" style="color:darkgreen"></i></div>
-     <div><i class="fa-solid fa-chart-simple fa-lg" style="color:darkgreen"></i></div>
-   
-   
-   
-   </div>
-   
-   
-           </div>
-           <!-- 4 -->
-           <div class="parent" style="position:relative; padding:20px">
-
-
-            <span style="position:absolute; top:0; left:0; background-color: rgb(221 186 186);; color:red">Expired</span>
-
-            <div class="flexbox" style="padding:10px">
-              
-             <div >
-               <img src="i4.PNG" alt="">
-             </div>
-             <div style="width:100%">
-               <div class="divmain" style="margin-bottom:1px; margin-left:5px">
-                 <b style="font-size: large;">Introduction to High school <br> Mathematics</b> 
-                 <i class="fa-solid fa-star fa-lg" style="color:grey"></i>
-               </div>
-                <!-- <b>Acceleration</b>  <br> -->
-              
-              <div style="margin-bottom:1px; margin-left:5px"> <span style="border-right: 1px solid grey; padding-right:3px">Mathematics</span>
-               <span>grade 8 <span style="color:green"> +2</span> </span></div> 
-     <br>
-     
-     <div style="margin-bottom:10px; margin-left:5px"><b>4</b> Units <b>18</b> lessons <b>24</b> Topics</div>
-     
-     <div style="margin-bottom:px; margin-left:5px">
-     <select name="" id="" class="divselec1" style="width:100%;  font-size: larger;" >
-       <option   value="" >Mr Frank Class A </option>
-     </select>
-     </div>
-     <br>
-     <div style="margin-bottom:10px; margin-left:5px">
-     <span style="border-right: 1px solid grey; padding-right:3px">50 students </span>
-     <span style="padding-left:3px">21-Jan-2020 21-Aug-2020</span>
-     </div>
-             </div>
+        <div class="parent" style="padding: 20px">
+          <div class="flexbox" style="padding: 10px">
+            <div>
+              <img src="i3.PNG" alt="" />
             </div>
-     
-     <div class="boxfooter">
-      
-       <div><i  class="fa-solid fa-eye fa-lg" style="color:darkgreen"></i></div>
-       <div><i class="fa-regular fa-calendar-days fa-lg" style="color:darkgreen"></i></div>
-       <div><i class="fa-regular fa-calendar-days fa-lg" style="color:darkgreen"></i></div>
-       <div><i class="fa-solid fa-chart-simple fa-lg" style="color:darkgreen"></i></div>
-     
-     
-     
-     </div>
-     
-     
-             <!-- </div> -->
+            <div style="width: 100%">
+              <div class="divmain" style="margin-bottom: 1px; margin-left: 5px">
+                <b style="font-size: large"
+                  >Introduction to Biology: Micro <br />organisms and how they
+                  affec..</b
+                >
+                <i class="fa-solid fa-star fa-lg" style="color: yellow"></i>
+              </div>
+              <!-- <b>Acceleration</b>  <br> -->
+
+              <div style="margin-bottom: 1px; margin-left: 5px">
+                <span style="border-right: 1px solid grey; padding-right: 3px"
+                  >Biology</span
+                >
+                <span>grade 4 <span style="color: green"> +1</span> </span>
+              </div>
+              <br />
+
+              <div style="margin-bottom: 10px; margin-left: 5px">
+                <b>4</b> Units <b>18</b> lessons <b>24</b> Topics
+              </div>
+
+              <div style="margin-bottom: px; margin-left: 5px">
+                <select
+                  name=""
+                  id=""
+                  class="divselec1"
+                  style="width: 100%; font-size: larger"
+                >
+                  <option value="">All Classes</option>
+                </select>
+              </div>
+              <br />
+              <div style="margin-bottom: 10px; margin-left: 5px">
+                <span style="padding-right: 3px">300 students </span>
+                <!-- <span style="padding-left:3px">21-Jan-2020 21-Aug-2020</span> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="boxfooter">
+            <div>
+              <i class="fa-solid fa-eye fa-lg" style="color: darkgreen"></i>
+            </div>
+            <div>
+              <i
+                class="fa-regular fa-calendar-days fa-lg"
+                style="color: darkgreen"
+              ></i>
+            </div>
+            <div>
+              <i
+                class="fa-regular fa-calendar-days fa-lg"
+                style="color: darkgreen"
+              ></i>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-chart-simple fa-lg"
+                style="color: darkgreen"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="parent" style="position: relative; padding: 20px">
+          <span
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              background-color: rgb(221 186 186);
+              color: red;
+            "
+            >Expired</span
+          >
+
+          <div class="flexbox" style="padding: 10px">
+            <div>
+              <img src="i4.PNG" alt="" />
+            </div>
+            <div style="width: 100%">
+              <div class="divmain" style="margin-bottom: 1px; margin-left: 5px">
+                <b style="font-size: large"
+                  >Introduction to High school <br />
+                  Mathematics</b
+                >
+                <i class="fa-solid fa-star fa-lg" style="color: grey"></i>
+              </div>
+              <!-- <b>Acceleration</b>  <br> -->
+
+              <div style="margin-bottom: 1px; margin-left: 5px">
+                <span style="border-right: 1px solid grey; padding-right: 3px"
+                  >Mathematics</span
+                >
+                <span>grade 8 <span style="color: green"> +2</span> </span>
+              </div>
+              <br />
+
+              <div style="margin-bottom: 10px; margin-left: 5px">
+                <b>4</b> Units <b>18</b> lessons <b>24</b> Topics
+              </div>
+
+              <div style="margin-bottom: px; margin-left: 5px">
+                <select
+                  name=""
+                  id=""
+                  class="divselec1"
+                  style="width: 100%; font-size: larger"
+                >
+                  <option value="">Mr Frank Class A</option>
+                </select>
+              </div>
+              <br />
+              <div style="margin-bottom: 10px; margin-left: 5px">
+                <span style="border-right: 1px solid grey; padding-right: 3px"
+                  >50 students
+                </span>
+                <span style="padding-left: 3px">21-Jan-2020 21-Aug-2020</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="boxfooter">
+            <div>
+              <i class="fa-solid fa-eye fa-lg" style="color: darkgreen"></i>
+            </div>
+            <div>
+              <i
+                class="fa-regular fa-calendar-days fa-lg"
+                style="color: darkgreen"
+              ></i>
+            </div>
+            <div>
+              <i
+                class="fa-regular fa-calendar-days fa-lg"
+                style="color: darkgreen"
+              ></i>
+            </div>
+            <div>
+              <i
+                class="fa-solid fa-chart-simple fa-lg"
+                style="color: darkgreen"
+              ></i>
+            </div>
+          </div>
+
+          <!-- </div> -->
+        </div>
       </div>
     </div>
-
-  </div>
     <div class="center">
       <a href="" id="r">About</a>
       <a href="">Contact-us</a>
@@ -620,15 +735,11 @@ font-weight: bold;
       <div></div>
     </footer>
 
-
-
     <script>
-
       function myfunc() {
-   
         var element = document.getElementById("none");
         element.classList.toggle("mystyle");
       }
     </script>
-</body>
+  </body>
 </html>
