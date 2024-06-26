@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+            align-content: center;
+            color:white;
+        }
+        .container{
+            display:flex;
+            flex-direction: column;
+          margin:4px;
+           height: 100vh;
+        padding :3px;
+         
+         
+           
+       
+        }
+        .header{
+            width:100%;
+            /* border:1px solid rgb(255, 255, 255); */
+            height:80px;
+            background-color:blueviolet;
+          
+            text-align: center;
+            /* align-content: center; */
+            color:white;
+            
+           
+        }
+        .content{
+            flex-grow: 1;
+          
+      
+            text-align: center;
+         
+            border:1px solid rgb(255, 255, 255);
+            display:flex;
+            flex-direction: row;
+          
+          
+           
+        }
+        .content>div{
+            border: 1px solid;
+            /* height: 100%; */
+            /* width: 100%; */
+        }
+
+        .footer{
+            width:100%;
+            /* border:1px solid rgb(255, 255, 255); */
+            height:80px;
+            text-align: center;
+            /* align-content: center; */
+            background-color: blueviolet;
+        }
+        .sub-c1{
+            /* width: 100px; */
+            width: 30%;
+            background-color: aqua;
+
+        }
+        .sub-c2{
+           width: 70%;
+          display:flex;
+          flex-direction: column;
+
+        }
+        .sub-c2>div{
+            /* gap: 4px; */
+            border-bottom:1px solid;
+            height: 50%;
+            background: linear-gradient(to bottom right,blueviolet,blue,aqua);
+        }
+        .content-sub-c2{
+            display:flex;
+            flex-direction: row;
+        }
+        .content-sub-c2>div{
+            /* border:1px solid ; */
+            width:50%;
+            /* align-content: center; */
+            text-align: center;
+            background: linear-gradient(to bottom right,blueviolet,blue,aqua);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+    <div class="header">header</div>
+    <div class="content">
+
+<div class="sub-c1">slider</div>
+<div class="sub-c2">
+
+
+
+    <!-- div will come -->
+     <div>content 1 </div>
+     <div class="content-sub-c2">
+
+        <div>content 2</div>
+        <div>content 3</div>
+
+     </div>
+    
+
+</div>
+
+
+
+    </div>
+    <div class="footer">footer</div>
+
+</div>
+</body>
+</html>

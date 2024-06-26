@@ -22,6 +22,16 @@
         font-family: "Roboto", sans-serif;
         background-color: #eeee;
       }
+
+      @font-face{
+        font-family: mytitle;
+        src:url(./quantum_screen_assets/Quicksand_font_1/static/Quicksand-Medium.ttf)
+      }
+      @font-face{
+        font-family: regular;
+        src:url(./quantum_screen_assets/Quicksand_font_1/static/Quicksand-Regular.ttf)
+        
+      }
       .nav {
         height: 8%;
         display: flex;
@@ -224,7 +234,8 @@
         justify-content: center;
       }
       .content7 > input {
-        width: 120px;
+        width: 215px;
+        height:40px;
         margin: 10px;
         margin-bottom: 30px;
         padding: 5px;
@@ -232,7 +243,7 @@
         box-shadow: 2px 2px 3px #1f2834;
         background-color: #3fd28b;
         border: 0px;
-        font-size: large;
+      
       }
 
       .fa-arrow-left {
@@ -263,34 +274,46 @@
     <div class="nav">
       <!-- <img src="h1.PNG" alt="" /> -->
       <a href="main.html">  <img src="h1.PNG" alt="" /></a>
-      <span id="span">QUANTUM</span>
+      <span id="span">Quantum</span>
     </div>
 
     <div class="container">
       <div class="login">
         <div class="logheader">
           <i class="fa-solid fa-arrow-left"></i>
-          <h2 class="h2">Log in with Quantum</h2>
+          <h2 class="h2" style="font-family: mytitle;">Log in with Quantum</h2>
         </div>
         <div class="contentl">
-          <div class="content2">
-            <input type="radio" name="" id="" /> District
-            <input type="radio" /> Independent school
+          <div class="content2"  style="font-family: normal normal medium 16px Quicksand;
+          letter-spacing: 0px; font-size:16px;
+          color: #333333;">
+            <input type="radio" name="" id="" /><span style="margin-right:20px; color:#333333">District</span>
+            <input type="radio" /><span style="color:#333333">Independent school</span>
           </div>
-          <div class="content3">
-            <label for=""> state</label><br />
+          <div class="content3"  >
+            <label for="" style="font-family: normal normal medium 12px Quicksand;
+            letter-spacing: 0px;
+            color: #666666; font-size:12px"> state*</label><br />
 
-            <select name="" id="state">
+            <select name="" id="state" style="font-family: normal normal medium 16pxQuicksand;
+            letter-spacing: 0px;
+            font-size:16px;
+            color: #222222;">
               <option value="">Alabama</option>
               <option value="">3</option>
               <option value="">4</option>
             </select>
           </div>
           <div class="content3">
-            <label for=""> country</label><br />
+            <label for="" style="font-family: normal normal medium 12px Quicksand;
+            letter-spacing: 0px;
+            color: #666666; font-size:12px"> District*</label><br />
 
-            <select name="" id="country">
-              <option value="">2</option>
+            <select name="" id="country" style="font-family: normal normal medium 16pxQuicksand;
+            letter-spacing: 0px;
+            font-size:16px;
+            color: #222222;">
+              <option value="">Alabama school district</option>
               <option value="">3</option>
               <option value="">4</option>
             </select>
@@ -302,29 +325,39 @@
               type="email"
               name=""
               id="email"
-              placeholder="username /  email "
+              placeholder="username /  Email* "
+              style="font: normal normal medium 16px Quicksand; font-size:16px"
             />
-            <a href="">FORGOT USERNAME?</a>
+            <a href="" style="font-family: normal normal medium 14px Quicksand;
+            letter-spacing: 0px; font-size:14px;
+            color: #1F7A54;">FORGOT USERNAME?</a>
           </div>
           <div class="content5">
             <!-- input 100% -->
             <div class="content5-1">
-              <input type="password" name="" id="pass" placeholder="password" />
+              <input type="password" name="" id="pass" placeholder="password"   style="font: normal normal medium 16px Quicksand; font-size:16px" />
               <i class="fa-regular fa-eye"></i>
             </div>
             <!-- <input type="password" name="" id="pass" placeholder="password"> <br> -->
-            <a href="">FORGOT PASSWORD?</a>
+            <a href=""  style="font-family: normal normal medium 14px Quicksand;
+            letter-spacing: 0px; font-size:14px;">FORGOT PASSWORD?</a>
           </div>
 
           <div class="content6">
-            <input type="checkbox" name="" id="" /> Remember me
+            <input type="checkbox" name="" id="" style="font-family: normal normal medium 16px Quicksand;
+            letter-spacing: 0px; font-size:16px;
+            color: #222222;" /> Remember me
           </div>
-          <div class="content7"><input type="submit" value="Log in" /></div>
+          <div class="content7"><input type="submit" value="Log in" style="font-family: normal normal medium 14px Quicksand;
+            letter-spacing: 0px; font-size:14px;
+            color: #1F2834;"/></div>
         </div>
       </div>
     </div>
-
-    <div class="center" style="margin-top:10px">
+ 
+    <div class="center" style="margin-top:10px; font-family: normal normal medium 14px Quicksand;
+    letter-spacing: 0px;
+    color: #1F7A54; font-size:14px">
       <a href="" id="r">About</a>
       <a href="">Contact-us</a>
     </div>
@@ -332,7 +365,9 @@
     <footer class="footer">
       <div></div>
       <div><img src="f1.PNG" alt="" id="img" /></div>
-      <div class="div3">
+      <div class="div3"  style="font-family: normal normal medium 12px Quicksand;
+      letter-spacing: 0px;
+      color: #616161; font-size:12px">
         Copyright &copy; 2000 -2021 <b>Zeus system Pvt.Ltd. </b> All rights
         reseverd
       </div>

@@ -22,6 +22,9 @@
       font-family: "Roboto", sans-serif;
       /* change */
     }
+  
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
     body {
       height: 100vh;
       display: flex;
@@ -43,7 +46,7 @@
       height: 100%;
     }
 
-    a {
+    .a1 {
       /* height: 100%; */
 
       /* padding-left: 20px; */
@@ -76,7 +79,7 @@
     .bar {
       display: none;
     }
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1000px) {
       .media {
         display: none;
       }
@@ -103,6 +106,8 @@
       #none > a {
         text-align: center;
         padding: 10px;
+        color:white;
+        text-decoration: none;
       }
       #none > a:hover {
         background-color: #313d49;
@@ -158,12 +163,15 @@
     .div102 > div:nth-child(1) {
       border-bottom: 3px solid black;
     }
+    .div102> div:nth-child(1n):hover{
+      border-bottom: 3px solid black;
+    }
     .div102 > div {
       /* border:1px solid black; */
       width: 50%;
       padding: 20px;
       text-align: center;
-      background-color: #8ddc97;
+      background-color: #8DDC97;
     }
     .div102 b {
       font-size: large;
@@ -193,29 +201,37 @@
 
     .grid {
       display: grid;
-      grid-template-columns: auto auto;
-      /* grid-template-columns: repeat(auto-fill,minmax(1fr, 1fr)); */
+      /* grid-template-columns: auto auto; */
+      grid-template-columns: repeat(auto-fill,minmax(476px,1fr));
+      grid-template-rows: 246px;
+    
 
-      gap: 30px;
+      gap:24px;
       margin: 10px;
+      /* justify-content: center; */
+    justify-items: center;
+
     }
 
-    @media screen and (max-width: 1200px) {
+    /* @media screen and (max-width: 1200px) {
       .grid {
         display: grid;
         grid-template-columns: auto;
         /* grid-template-columns: repeat(auto-fill,minmax(1fr, 1fr)); */
 
-        gap: 30px;
+        /* gap: 30px;
         margin: 10px;
         padding: 20px;
       }
-    }
+    } */
 
     /* inside content  */
     .parent {
+     
       padding: 10px;
       background-color: white;
+      max-width:500px;
+     
     }
 
     .flexbox {
@@ -236,8 +252,8 @@
     }
 
     .divmain {
-      display: flex;
-      justify-content: space-between;
+      /* display: flex; */
+      /* justify-content: space-between; */
     }
 
     .boxfooter {
@@ -247,9 +263,7 @@
       text-align: center;
       padding: 10px;
     }
-    .boxfooter > div {
-      /* border:1px solid black; */
-    }
+   
 
     .center {
       text-align: center;
@@ -259,6 +273,7 @@
     .center > a {
       text-decoration: none;
       color: rgb(41, 141, 46);
+    
     }
     #r {
       border-right: 1px solid grey;
@@ -288,12 +303,26 @@
     .div3 {
       color: #616161;
     }
-    .flexbox img {
+    /* .flexbox img {
       /* width:130px;
         height: 150px; */
-      width: 100%;
-      height: 100%;
-    }
+      /* width: 100%;
+      height: 100%; */
+    /* } */
+
+.contentpic{
+  width:132px;
+  height:157px;
+}
+.media>a{
+  font-family: normal normal medium 14px Quicksand;
+  font-size:14px;
+letter-spacing: 0px;
+color: #3FD28B;
+margin-right:32px;
+
+}
+
   </style>
   <body style="background-color: whitesmoke">
     <div class="nav">
@@ -309,12 +338,12 @@
       <div class="third">
         <div class="media">
           <a class="dash" style="color: white">Dashboard</a>
-          <a href="">content</a>
-          <a href="">users</a>
-          <a href="">report</a>
-          <a href="">admin</a>
+          <a class="a1" href="">content</a>
+          <a class="a1" href="">users</a>
+          <a  class="a1" href="">report</a>
+          <a class="a1" href="">admin</a>
         </div>
-        <a href=""
+        <a href="" class="a1"
           ><i
             class="fa-regular fa-bell"
             style="position: relative; padding: 5px"
@@ -334,7 +363,7 @@
           ></a
         >
         <!-- <a href=""><i class="fa-solid fa-bullhorn"></i></a> -->
-        <a href=""
+        <a href="" class="a1"
           ><i
             class="fa-solid fa-bullhorn"
             style="position: relative; padding: 5px"
@@ -353,7 +382,7 @@
             ></i
           ></a
         >
-        <a href="" class="alast" style="position: relative;"
+        <a href="" class="a1"class="alast" style="position: relative;"
           ><img
             src="h2.PNG"
             alt=""
@@ -391,78 +420,108 @@
       <a href="">admin</a>
     </div>
     <div class="foot">
-      <div class="div102">
+
+      <div class="div102" >
         <div>
-          <i class="fa-solid fa-lg fa-book"></i>
-          <b style="font-size: larger">4 </b>
-          <span style="font-size: larger; font-family: roboto">Courses</span>
+          <i class="fa-solid fa-lg fa-book" ></i>
+          <b style="font-family: normal normal bold 24px Quicksand;
+          letter-spacing: 0px;
+          color: #222222; font-size:24px">4 </b>
+          <span style="font-family: normal normal medium 16px Quicksand;
+          letter-spacing: 0px;
+          color: #222222; font-size:16px">Courses</span>
         </div>
         <div>
           <i class="fa-solid fa-lg fa-user"></i>
-          <b style="font-size: larger">4</b>
-          <span style="font-size: larger; font-family: roboto">Classes</span>
+          <b style="font-family: normal normal bold 24px Quicksand;
+          letter-spacing: 0px;
+          color: #222222; font-size:24px">4</b>
+          <span style="font-family: normal normal medium 16px Quicksand;
+          letter-spacing: 0px;
+          color: #222222; font-size:16px">Classes</span>
         </div>
       </div>
 
-      <div class="div149">
-        <div>showing 4 by 4 courses</div>
 
-        <div class="div165">
+      <div class="div149">
+        <div style="font-family: normal normal medium 12px Quicksand;
+        letter-spacing: 0px;
+        color: #686868; font-size:12px">showing 4 by 4 courses</div>
+
+        <div class="div165" style="font-family: normal normal medium 12px Quicksand;
+        letter-spacing: 0px;
+        color: #686868; font-size:12px">
           sort by:
           <select
             name=""
             id=""
             class="divselec"
-            style="background-color: whitesmoke"
+            style="background-color: whitesmoke; font: normal normal medium 16px Quicksand;
+            letter-spacing: 0px;
+            color: #333333; font-size:16px;margin-left: 6px;"
           >
-            <option value="">course name</option>
+            <option value="">Course Name</option>
           </select>
-          <i class="fa-solid fa-arrow-up"></i>
+          <i class="fa-solid fa-lg fa-arrow-up" style="color:#1F7A54; margin-left:6px"></i>
         </div>
       </div>
 
       <div class="grid">
         <!-- 1  -->
-        <div class="parent" style="padding: 20px">
+        <div class="parent" style="padding: 20px ; position:relative;">
           <div class="flexbox" style="padding: 10px">
             <div>
-              <img src="i1.PNG" alt="" />
+              <img src="i1.PNG" alt=""  class="contentpic"/>
             </div>
             <div style="width: 100%">
-              <div class="divmain" style="margin-bottom: 1px; margin-left: 5px">
-                <b style="font-size: large">Acceleration</b>
-                <i class="fa-solid fa-star fa-lg" style="color: yellow"></i>
+              <div class="divmain" style="margin-bottom: 10px; margin-left: 5px">
+                <b style="font-size:16px;font-family:normal normal medium 16px Quicksand; color:#222222;margin-right:20px">Acceleration</b>
+                <i class="fa-solid fa-star fa-lg" style="color: yellow; position:absolute; right:0"></i>
               </div>
               <!-- <b>Acceleration</b>  <br> -->
 
-              <div style="margin-bottom: 1px; margin-left: 5px">
-                <span style="border-right: 1px solid grey; padding-right: 3px"
+              <div style=" margin-left: 5px;margin-bottom:7px">
+                <span style="border-right: 1px solid grey; padding-right: 3px; font-family: normal normal medium 12px Quicksand;font-size:12px;
+                letter-spacing: 0px;
+                color: #666666"
                   >physics</span
                 >
-                <span>grade 7<span style="color: green"> +2</span> </span>
+                <span style="font-family: normal normal medium 12px  Quicksand;
+                letter-spacing: 0px;font-size:12px;
+                color: #666666">grade 7<span style="font-family: normal normal medium 12px Quicksand;font-size:12px;
+letter-spacing: 0px;
+color: #1F7A54;"> +2</span> </span>
               </div>
-              <br />
+          
 
-              <div style="margin-bottom: 10px; margin-left: 5px">
-                <b>4</b> Units <b>18</b> lessons <b>24</b> Topics
+              <div style="margin-bottom: 18px; margin-left: 5px">
+       <span style="font-family: normal normal medium 12px  Quicksand; font-size:12px;
+       letter-spacing: 0px;
+       color: #666666; margin-right:6px">        <b style="color:black;">4</b> Units <b style="color:black">18</b> lessons <b style="color:black">24</b> Topics</span> 
               </div>
 
-              <div style="margin-bottom: px; margin-left: 5px">
+              <div style="margin-bottom: 13px; margin-left: 5px">
                 <select
                   name=""
                   id=""
                   class="divselec1"
-                  style="width: 100%; font-size: larger"
+                  style="width: 100%; font-family: normal normal medium 16px  Quicksand; font-size:16px;
+                  letter-spacing: 0px;
+                  color: #222222;"
                 >
                   <option value="">Mr Frank Class B</option>
                 </select>
               </div>
-              <br />
-              <div style="margin-bottom: 10px; margin-left: 5px">
-                <span style="border-right: 1px solid grey; padding-right: 3px"
+              
+              <div style=" margin-left: 5px">
+                <span style="border-right: 1px solid grey; padding-right: 3px;font-family: normal normal medium 12px  Quicksand; font-size:12px;
+                letter-spacing: 0px;
+                color: #666666;"
                   >50 students
                 </span>
-                <span style="padding-left: 3px">21-Jan-2020 21-Aug-2020</span>
+                <span style="padding-left: 3px; font-family: normal normal medium 12px Quicksand; font-size:12px;
+                letter-spacing: 0px;
+                color: #666666;">21-Jan-2020 21-Aug-2020</span>
               </div>
             </div>
           </div>
@@ -494,39 +553,49 @@
 
         <!-- 2 -->
 
-        <div class="parent" style="padding: 20px">
+        <div class="parent" style="padding: 20px; position:relative">
           <div class="flexbox" style="padding: 10px">
             <div>
-              <img src="i2.PNG" alt="" />
+              <img src="i2.PNG" alt=""   class="contentpic"/>
             </div>
             <div style="width: 100%">
-              <div class="divmain" style="margin-bottom: 1px; margin-left: 5px">
-                <b style="font-size: large"
+              <div class="divmain" style="margin-bottom: 10px; margin-left: 5px; ">
+                <b style="font-family: normal normal medium 16px Quicksand; font-size:16px;
+                letter-spacing: 0px;
+                color: #222222; "
                   >Displacement, Velocity and <br />
                   Speed</b
                 >
-                <i class="fa-solid fa-star fa-lg" style="color: yellow"></i>
+                <i class="fa-solid fa-star fa-lg" style="color: yellow; position:absolute;right:0;"></i>
               </div>
               <!-- <b>Acceleration</b>  <br> -->
 
-              <div style="margin-bottom: 1px; margin-left: 5px">
-                <span style="border-right: 1px solid grey; padding-right: 3px"
-                  >physics</span
+              <div style="margin-bottom: 7px; margin-left: 5px">
+                <span style="border-right: 1px solid grey; padding-right: 3px;font-family: normal normal medium 12px Quicksand; font-size:12px;
+                letter-spacing: 0px;
+                color: #666666;"
+                  >Physics</span
                 >
-                <span>grade 6<span style="color: green"> +2</span> </span>
+                <span style="font-family: normal normal medium 12px Quicksand; font-size:12px;
+                letter-spacing: 0px;
+                color: #666666;">grade 6<span style="color: green"> +2</span> </span>
               </div>
-              <br />
+           
 
-              <div style="margin-bottom: 10px; margin-left: 5px">
-                <b>2</b> Units <b>15</b> lessons <b>20</b> Topics
+              <div style="margin-bottom: 18px; margin-left: 5px;font-family: normal normal medium 12px Quicksand; font-size:12px;
+              letter-spacing: 0px;
+              color: #666666;">
+                <b style="color:#222222">2</b> Units <b style="color:#222222">15</b> lessons <b style="color:#222222;">20</b> Topics
               </div>
 
-              <div style="margin-bottom: px; margin-left: 5px">
+              <div style="margin-bottom: 13px; margin-left: 5px">
                 <select
                   name=""
                   id=""
                   class="divselec1"
-                  style="width: 100%; font-size: larger; color: grey"
+                  style="width: 100%; font-family: normal normal medium 16px Quicksand; font-size:16px;
+                  letter-spacing: 0px;
+                  color: #666666;"
                 >
                   <option value="">No Classes</option>
                 </select>
@@ -564,46 +633,59 @@
           </div>
         </div>
         <!-- 3  -->
-        <div class="parent" style="padding: 20px">
+        <div class="parent" style="padding: 20px; position: relative;">
           <div class="flexbox" style="padding: 10px">
             <div>
-              <img src="i3.PNG" alt="" />
+              <img src="i3.PNG" alt=""  class="contentpic" />
             </div>
             <div style="width: 100%">
-              <div class="divmain" style="margin-bottom: 1px; margin-left: 5px">
-                <b style="font-size: large"
+              <div class="divmain" style="margin-bottom: 10px; margin-left: 5px; ">
+                <b style=" font-family: normal normal medium 16px Quicksand; font-size:16px;
+                letter-spacing: 0px;
+                color: #222222;"
                   >Introduction to Biology: Micro <br />organisms and how they
                   affec..</b
                 >
-                <i class="fa-solid fa-star fa-lg" style="color: yellow"></i>
+                <i class="fa-solid fa-star fa-lg" style="color: yellow; position: absolute; right:0"></i>
               </div>
               <!-- <b>Acceleration</b>  <br> -->
 
-              <div style="margin-bottom: 1px; margin-left: 5px">
-                <span style="border-right: 1px solid grey; padding-right: 3px"
+              <div style="margin-bottom: 7px; margin-left: 5px">
+                <span style="border-right: 1px solid grey; padding-right: 3px;  font-family: normal normal medium 12px Quicksand; font-size:12px;
+                letter-spacing: 0px;
+                color: #666666;"
                   >Biology</span
                 >
-                <span>grade 4 <span style="color: green"> +1</span> </span>
+                <span style=" font-family: normal normal medium 12px Quicksand; font-size:12px;
+                letter-spacing: 0px;
+                color: #666666;">grade 4 <span style=" font-family: normal normal medium 12px Quicksand;font-size:12px;
+letter-spacing: 0px;
+color: #1F7A54; "> +1</span> </span>
               </div>
-              <br />
-
-              <div style="margin-bottom: 10px; margin-left: 5px">
-                <b>4</b> Units <b>18</b> lessons <b>24</b> Topics
+            
+              <div style="margin-bottom: 18px; margin-left: 5px;font-family: normal normal medium 12px Quicksand;font-size:12px;
+              letter-spacing: 0px;
+              color: #666666">
+                <b style="color:#222222">4</b> Units <b style="color:#222222">18</b> lessons <b style="color:#222222">24</b> Topics
               </div>
 
-              <div style="margin-bottom: px; margin-left: 5px">
+              <div style="margin-bottom: 13px; margin-left: 5px">
                 <select
                   name=""
                   id=""
                   class="divselec1"
-                  style="width: 100%; font-size: larger"
+                  style="width: 100%;  font-family: normal normal medium 16px Quicksand; font-size:16px;
+                  letter-spacing: 0px;
+                  color: #222222;"
                 >
                   <option value="">All Classes</option>
                 </select>
               </div>
-              <br />
-              <div style="margin-bottom: 10px; margin-left: 5px">
-                <span style="padding-right: 3px">300 students </span>
+           
+              <div style=" margin-left: 5px">
+                <span style="padding-right: 3px;  font-family: normal normal medium 12px Quicksand; font-size:12px;
+                letter-spacing: 0px;
+                color: #666666;">300 students </span>
                 <!-- <span style="padding-left:3px">21-Jan-2020 21-Aug-2020</span> -->
               </div>
             </div>
@@ -648,46 +730,58 @@
 
           <div class="flexbox" style="padding: 10px">
             <div>
-              <img src="i4.PNG" alt="" />
+              <img src="i4.PNG" alt=""  class="contentpic" />
             </div>
             <div style="width: 100%">
-              <div class="divmain" style="margin-bottom: 1px; margin-left: 5px">
-                <b style="font-size: large"
+              <div class="divmain" style="margin-bottom: 10px; margin-left: 5px">
+                <b style="font-family: normal normal medium 16px Quicksand; font-size:16px;
+                letter-spacing: 0px;
+                color: #222222;"
                   >Introduction to High school <br />
                   Mathematics</b
                 >
-                <i class="fa-solid fa-star fa-lg" style="color: grey"></i>
+                <i class="fa-solid fa-star fa-lg" style="color: grey; position:absolute; right:0"></i>
               </div>
               <!-- <b>Acceleration</b>  <br> -->
 
-              <div style="margin-bottom: 1px; margin-left: 5px">
+              <div style="margin-bottom: 7px; margin-left: 5px; font-family: normal normal medium 12px Quicksand; font-size:12px;
+              letter-spacing: 0px;
+              color: #666666;">
                 <span style="border-right: 1px solid grey; padding-right: 3px"
                   >Mathematics</span
                 >
-                <span>grade 8 <span style="color: green"> +2</span> </span>
+                <span>grade 8 <span style="color: #1F7A54;"> +2</span> </span>
               </div>
-              <br />
+            
 
-              <div style="margin-bottom: 10px; margin-left: 5px">
-                <b>4</b> Units <b>18</b> lessons <b>24</b> Topics
+              <div style="margin-bottom: 18px; margin-left: 5px;font-family: normal normal medium 12px Quicksand; font-size:12px;
+              letter-spacing: 0px;
+              color: #666666;">
+                <b style="color:#222222">4</b> Units <b style="color:black">18</b> lessons <b style="color:black;">24</b> Topics
               </div>
 
-              <div style="margin-bottom: px; margin-left: 5px">
+              <div style="margin-bottom: 13px; margin-left: 5px">
                 <select
                   name=""
                   id=""
                   class="divselec1"
-                  style="width: 100%; font-size: larger"
+                  style="width: 100%; font-family: normal normal medium 16px Quicksand; font-size:16px;
+                  letter-spacing: 0px;
+                  color: #222222;"
                 >
                   <option value="">Mr Frank Class A</option>
                 </select>
               </div>
-              <br />
+          
               <div style="margin-bottom: 10px; margin-left: 5px">
-                <span style="border-right: 1px solid grey; padding-right: 3px"
+                <span style="border-right: 1px solid grey; padding-right: 3px;font-family: normal normal medium 12px Quicksand; font-size:12px;
+                letter-spacing: 0px;
+                color: #666666;"
                   >50 students
                 </span>
-                <span style="padding-left: 3px">21-Jan-2020 21-Aug-2020</span>
+                <span style="padding-left: 3px;font-family: normal normal medium 12px Quicksand; font-size:12px;
+                letter-spacing: 0px;
+                color: #666666;">21-Jan-2020 21-Aug-2020</span>
               </div>
             </div>
           </div>
@@ -720,15 +814,19 @@
         </div>
       </div>
     </div>
-    <div class="center">
-      <a href="" id="r">About</a>
+    <div class="center" style="font-family: normal normal medium 14px Quicksand;
+    letter-spacing: 0px;
+    color: #1F7A54; font-size:14px">
+      <a href=""  style="border-right:1px solid #b7c9c9; padding: 5px;">About</a>
       <a href="">Contact-us</a>
     </div>
 
     <footer class="footer">
       <div></div>
       <div><img src="f1.PNG" alt="" id="img" /></div>
-      <div class="div3">
+      <div class="div3" style="font-family: normal normal medium 12px Quicksand;
+      letter-spacing: 0px;
+      color: #616161; font-size:12px">
         Copyright &copy; 2000 -2021 <b>Zeus system Pvt.Ltd. </b> All rights
         reseverd
       </div>
