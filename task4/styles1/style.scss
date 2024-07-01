@@ -1,0 +1,23 @@
+body{
+    background-color: whitesmoke;
+    margin:0px;
+    padding:0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin font($fsize,$fcolor){
+    font-family: normal normal medium $fsize Quicksand;
+    font-family: Quicksand;
+    font-size:$fsize;
+    letter-spacing: 0px;
+    color: $fcolor;
+    }
+
+@import "./nav";
+
+@import "./container";
+
+@import "./center";
+@import "./footer";

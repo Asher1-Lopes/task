@@ -1,0 +1,583 @@
+body {
+  background-color: whitesmoke;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  height: 8%;
+  display: flex;
+  /* flex-direction: row; */
+  /* align-items: center; */
+  /* align-content: center; */
+  background-color: #1f2a36;
+}
+.nav .bar {
+  display: none;
+}
+.nav a {
+  margin-left: 20px;
+  margin-right: 5px;
+  color: white;
+  text-decoration: none;
+}
+.nav .img1 {
+  width: 100%;
+  height: 100%;
+}
+.nav .span {
+  color: white;
+  text-align: center;
+  align-content: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.nav .mid {
+  flex-grow: 1;
+}
+.nav .third {
+  display: flex;
+}
+.nav .third .media {
+  display: flex;
+}
+.nav .third .media .dash {
+  border-bottom: 5px solid white;
+  font-family: normal normal medium 14px Quicksand;
+  font-family: Quicksand;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+.nav .third .media a {
+  align-content: center;
+  text-align: center;
+  font-family: normal normal medium 14px Quicksand;
+  font-family: Quicksand;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #3FD28B;
+  margin-right: 32px;
+}
+@media screen and (max-width: 1150px) {
+  .nav .third .media {
+    display: none;
+  }
+  .nav .third .bar {
+    align-content: center;
+    text-align: center;
+    display: block;
+    color: #3FD28B;
+    margin-right: 10px;
+    margin-left: 20px;
+    position: relative;
+  }
+  .nav .third .bar .barhover {
+    display: none;
+    animation-name: barD;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    transition-timing-function: linear;
+  }
+  @keyframes barD {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .nav .third .bar:hover {
+    color: white;
+  }
+  .nav .third .bar:hover .barhover {
+    font-family: normal normal medium 16px Quicksand;
+    font-family: Quicksand;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 280px;
+    color: black;
+    box-shadow: 0px 13px 20px rgba(0, 0, 0, 0.2392156863);
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    right: 0px;
+    top: 50px;
+    z-index: 10;
+  }
+  .nav .third .bar:hover .barhover .bardivpa.dark {
+    background-color: #F3F3F3;
+  }
+  .nav .third .bar:hover .barhover .bardiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    padding-left: 16px;
+    text-transform: uppercase;
+    font-family: normal normal medium 14px Quicksand;
+    font-family: Quicksand;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #1F7A54;
+  }
+  .nav .third .bar:hover .barhover .bardiv i {
+    color: #666666;
+  }
+  .nav .third .bar:hover .barhover .bardiv i.rotate {
+    transform: rotate(180deg);
+  }
+  .nav .third .bar:hover .barhover #iopen {
+    display: none;
+  }
+  .nav .third .bar:hover .barhover #iopen.hidden {
+    display: flex !important;
+    padding-left: 32px;
+    font-family: normal normal medium 14px Quicksand;
+    font-family: Quicksand;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #1F7A54;
+  }
+}
+.nav .third a {
+  align-content: center;
+  color: #3FD28B;
+  position: relative;
+}
+.nav .third a i {
+  align-content: center;
+  text-align: center;
+  color: #3FD28B;
+  margin-right: 10px;
+  position: relative;
+  padding: 5px;
+}
+.nav .third a i span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 8px;
+  color: white;
+  border-radius: 50%;
+  background-color: #2A7FF3;
+  padding: 3px;
+}
+.nav .third a .hornblock {
+  display: none;
+  animation-name: demo;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  transition-timing-function: linear;
+}
+@keyframes demo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.nav .third a:hover i {
+  color: #FFFFFF;
+}
+.nav .third a:hover span {
+  display: none;
+}
+.nav .third a:hover .hornblock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 80px;
+  z-index: 10;
+  right: 0px;
+  width: 315px;
+  box-shadow: 0px 13px 20px rgba(0, 0, 0, 0.2392156863);
+  border-radius: 2px;
+  z-index: 1;
+  background-color: #FFFFFF;
+}
+.nav .third a:hover .hornblock .scroll {
+  overflow-y: scroll;
+  height: 400px;
+}
+.nav .third a:hover .hornblock .scroll .sdivbg {
+  background-color: #FFFFEE;
+}
+.nav .third a:hover .hornblock .scroll .sdiv {
+  padding: 10px;
+  border-bottom: 1px solid #6E6E6E;
+}
+.nav .third a:hover .hornblock .scroll .sdiv .scroll-content1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.nav .third a:hover .hornblock .scroll .sdiv .scroll-content1 .bellc {
+  font-family: normal normal medium 14px Quicksand;
+  font-family: Quicksand;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #222222;
+}
+.nav .third a:hover .hornblock .scroll .sdiv .scroll-content1 div {
+  font-family: normal normal medium 12px Quicksand;
+  font-family: Quicksand;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #222222;
+  margin-bottom: 8px;
+}
+.nav .third a:hover .hornblock .scroll .sdiv .scroll-content1 div .spanc1 {
+  display: inline;
+  font-family: normal normal medium 12px Quicksand;
+  font-family: Quicksand;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #6E6E6E;
+}
+.nav .third a:hover .hornblock .scroll .sdiv .scroll-content1 i {
+  margin: 0px;
+  padding: 0px;
+  color: #3FD28B;
+}
+.nav .third a:hover .hornblock .scroll .sdiv .bellc2 {
+  font-family: normal normal medium 12px Quicksand;
+  font-family: Quicksand;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #222222;
+  margin-bottom: 8px;
+}
+.nav .third a:hover .hornblock .scroll .sdiv .scroll-content2 {
+  font-family: normal normal medium 14px Quicksand;
+  font-family: Quicksand;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #222222;
+  margin-bottom: 8px;
+}
+.nav .third a:hover .hornblock .scroll .sdiv .scroll-content3 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-family: normal normal medium 12px Quicksand;
+  font-family: Quicksand;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #6E6E6E;
+}
+.nav .third a:hover .hornblock .scroll .sdiv .scroll-content3 i {
+  margin: 2px;
+  padding: 0px;
+  color: #6E6E6E;
+}
+.nav .third a:hover .hornblock .extra-h {
+  height: 480px;
+}
+.nav .third a:hover .hornblock .bottombell {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2392156863);
+  border-radius: 0px 0px 2px 2px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.nav .third a:hover .hornblock .bottomb {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2392156863);
+  border-radius: 0px 0px 2px 2px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.nav .third a:hover .hornblock .bottomb .divleft {
+  border-right: 1px solid grey;
+}
+.nav .third a:hover .hornblock .bottomb div {
+  width: 50%;
+  font-family: normal normal medium 14px Quicksand;
+  font-family: Quicksand;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #1F7A54;
+}
+@media screen and (max-width: 1150px) {
+  .nav .third a:hover .hornblock {
+    top: 50px;
+  }
+}
+
+.foot {
+  flex-grow: 1;
+}
+.foot .content {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  align-content: center;
+  padding: 10px;
+}
+.foot .content :nth-child(1) {
+  border-bottom: 3px solid black;
+}
+.foot .content div {
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  background-color: #8DDC97;
+}
+.foot .content div i {
+  margin-right: 5px;
+}
+.foot .content div b {
+  font-family: normal normal medium 24px Quicksand;
+  font-family: Quicksand;
+  font-size: 24px;
+  letter-spacing: 0px;
+  color: #222222;
+  font-weight: bold;
+}
+.foot .content div span {
+  font-family: normal normal medium 16px Quicksand;
+  font-family: Quicksand;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #222222;
+}
+.foot .content1 {
+  display: flex;
+  flex-direction: row;
+  /* width:100%; */
+  border-bottom: 1px solid grey;
+  /* margin-left:10px; */
+  margin: 20px;
+  justify-content: space-between;
+}
+.foot .content1 div {
+  /* border: 1px solid ; */
+  margin: 15px;
+  font-family: normal normal medium 12px Quicksand;
+  font-family: Quicksand;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #686868;
+}
+.foot .content1 :nth-child(2) select {
+  border: 0px;
+  border-bottom: 1px solid grey;
+  background-color: whitesmoke;
+  margin-left: 6px;
+  width: 200px;
+  font-family: normal normal medium 16px Quicksand;
+  font-family: Quicksand;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #333333;
+}
+.foot .content1 :nth-child(2) i {
+  color: #1F7A54;
+  margin-left: 6px;
+}
+.foot .grid {
+  display: grid;
+  /* grid-template-columns: auto auto; */
+  grid-template-columns: repeat(auto-fill, minmax(476px, 1fr));
+  gap: 24px;
+  margin: 10px;
+  justify-items: center;
+}
+@media screen and (max-width: 1150px) {
+  .foot .grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+.foot .grid .parent {
+  padding: 20px;
+  background-color: white;
+  max-width: 500px;
+  position: relative;
+  width: 100%;
+}
+.foot .grid .parent .pspan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(221, 186, 186);
+  color: red;
+}
+.foot .grid .parent .flexbox {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+.foot .grid .parent .flexbox .rightsub img {
+  width: 132px;
+  height: 157px;
+}
+.foot .grid .parent .flexbox .leftsub {
+  width: 100%;
+}
+.foot .grid .parent .flexbox .leftsub div select {
+  border: 0px;
+  border-bottom: 1px solid black;
+  width: 300px;
+}
+.foot .grid .parent .flexbox .leftsub .l1 {
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.foot .grid .parent .flexbox .leftsub .l1 b {
+  font-family: normal normal medium 16px Quicksand;
+  font-family: Quicksand;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: black;
+  margin-right: 20px;
+}
+.foot .grid .parent .flexbox .leftsub .l1 .greystar {
+  color: grey;
+}
+.foot .grid .parent .flexbox .leftsub .l1 i {
+  color: yellow;
+  position: absolute;
+  right: 0;
+}
+.foot .grid .parent .flexbox .leftsub .l2 {
+  margin-left: 5px;
+  margin-bottom: 7px;
+}
+.foot .grid .parent .flexbox .leftsub .l2 .span1l2 {
+  border-right: 1px solid grey;
+  padding-right: 3px;
+  font-family: normal normal medium 12px Quicksand;
+  font-family: Quicksand;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #666666;
+}
+.foot .grid .parent .flexbox .leftsub .l2 .span2l2 {
+  font-family: normal normal medium 12px Quicksand;
+  font-family: Quicksand;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #666666;
+}
+.foot .grid .parent .flexbox .leftsub .l2 .span2l2 span {
+  font-family: normal normal medium 12px Quicksand;
+  font-family: Quicksand;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #1F7A54;
+}
+.foot .grid .parent .flexbox .leftsub .l3 {
+  margin-bottom: 18px;
+  margin-left: 5px;
+}
+.foot .grid .parent .flexbox .leftsub .l3 span {
+  font-family: normal normal medium 12px Quicksand;
+  font-family: Quicksand;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #666666;
+  margin-right: 6px;
+}
+.foot .grid .parent .flexbox .leftsub .l3 span b {
+  color: black;
+}
+.foot .grid .parent .flexbox .leftsub .l4 {
+  margin-bottom: 13px;
+  margin-left: 5px;
+}
+.foot .grid .parent .flexbox .leftsub .l4 select {
+  font-family: normal normal medium 16px Quicksand;
+  font-family: Quicksand;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #222222;
+  width: 100%;
+}
+.foot .grid .parent .flexbox .leftsub .l5 {
+  margin-left: 5px;
+}
+.foot .grid .parent .flexbox .leftsub .l5 .span1l5 {
+  padding-right: 1px;
+  font-family: normal normal medium 12px Quicksand;
+  font-family: Quicksand;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #666666;
+}
+.foot .grid .parent .flexbox .leftsub .l5 .span2l5 {
+  padding-left: 1px;
+  font-family: normal normal medium 12px Quicksand;
+  font-family: Quicksand;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #666666;
+}
+.foot .grid .parent .boxfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px;
+}
+.foot .grid .parent .boxfooter div i {
+  color: darkgreen;
+}
+
+.center {
+  text-align: center;
+  padding-bottom: 4px;
+  background-color: #eeeeee;
+  margin-top: 10px;
+  font-family: normal normal medium 14px Quicksand;
+  font-family: Quicksand;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #1F7A54;
+}
+.center a {
+  text-decoration: none;
+  color: rgb(41, 141, 46);
+}
+.center .r {
+  border-right: 1px solid grey;
+  padding-right: 7px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* border:2px solid black; */
+  background-color: #E0E1E1;
+  padding: 2px;
+}
+.footer .div3 {
+  width: auto;
+  font-family: normal normal medium 12px Quicksand;
+  font-family: Quicksand;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #616161;
+  border-left: 1px solid #616161;
+  padding-left: 5px;
+}
+.footer img {
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */

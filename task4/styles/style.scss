@@ -1,0 +1,17 @@
+body{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;   
+    
+    margin: 0px;
+    padding: 0px;
+    // font-family: "Roboto", sans-serif;
+    background-color: #eeee;
+   
+}
+@import "./nav";
+
+@import "./container";
+
+@import "./center";
+@import "./footer";
